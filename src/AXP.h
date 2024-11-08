@@ -31,7 +31,7 @@ uint16_t Read16bit(uint8_t Addr);
 uint32_t Read24bit(uint8_t Addr);
 uint32_t Read32bit(uint8_t Addr);
 void ReadBuff(uint8_t Addr, uint8_t Size, uint8_t *Buff);
-bool writeRegister8Array(const std::uint8_t *reg_data_array,
+bool writeRegister8Array(const uint8_t *reg_data_array,
                          std::size_t length);
 
 uint8_t calcVoltageData(uint16_t value, uint16_t maxv, uint16_t minv,
