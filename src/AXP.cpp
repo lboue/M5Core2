@@ -88,7 +88,7 @@ void ReadBuff(uint8_t Addr, uint8_t Size, uint8_t* Buff) {
     }
 }
 
-bool writeRegister8Array(const std::uint8_t* reg_data_array,
+bool writeRegister8Array(const uint8_t* reg_data_array,
                          std::size_t length) {
     for (size_t i = 0; i < length; i += 2) {
         Write1Byte(reg_data_array[i], reg_data_array[i + 1]);
